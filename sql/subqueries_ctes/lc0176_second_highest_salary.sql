@@ -1,0 +1,19 @@
+-- Problem: LC 176 | Second Highest Salary
+-- Difficulty: Medium
+-- Pattern: sql/subqueries_ctes
+-- Link: https://leetcode.com/problems/second-highest-salary/
+-- Status: todo
+-- Source: own
+-- Added: 2026-10-12
+-- Revisit: none
+-- Time: TODO
+-- Space: TODO
+--
+-- Summary:
+--     TODO: what this problem asks, in your own words.
+--
+-- Key insight:
+--     TODO: the one idea that makes this query work.
+--
+-- Mistakes:
+--     - TODO: what you got wrong on the first attempt.

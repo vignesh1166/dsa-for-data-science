@@ -1,0 +1,62 @@
+"""
+Problem: {{PROBLEM_ID}} | {{TITLE}}
+Difficulty: {{DIFFICULTY}}
+Pattern: {{PATTERN}}
+Link: {{LINK}}
+Status: todo
+Source: own
+Added: {{ADDED}}
+Revisit: none
+Time: TODO
+Space: TODO
+
+Summary:
+    TODO: what this problem asks, in your own words.
+
+Key insight:
+    TODO: the one idea that makes the optimal solution work.
+
+Mistakes:
+    - TODO: what you got wrong on the first attempt.
+"""
+
+import random
+
+import pytest
+
+# (input, expected) straight from the problem statement.
+EXAMPLES: list[tuple[list[int], object]] = []
+
+# Inputs worth checking on their own: empty, single element, duplicates, negatives, extremes.
+# Each is asserted against _brute, so no expected value has to be worked out by hand.
+EDGES: list[list[int]] = []
+
+
+def _brute(nums: list[int]) -> object:
+    """Obviously-correct reference implementation. Write this one first."""
+    raise NotImplementedError
+
+
+def {{FUNC}}(nums: list[int]) -> object:
+    """Optimal solution. Write this second."""
+    raise NotImplementedError
+
+
+@pytest.mark.skip(reason="todo")
+def test_examples() -> None:
+    for nums, expected in EXAMPLES:
+        assert {{FUNC}}(nums) == expected, nums
+
+
+@pytest.mark.skip(reason="todo")
+def test_edges() -> None:
+    for nums in EDGES:
+        assert {{FUNC}}(nums) == _brute(nums), nums
+
+
+@pytest.mark.skip(reason="todo")
+def test_matches_brute_force() -> None:
+    rng = random.Random(0)
+    for _ in range(200):
+        nums = [rng.randint(-20, 20) for _ in range(rng.randint(0, 12))]
+        assert {{FUNC}}(nums) == _brute(nums), nums
